@@ -28,7 +28,8 @@ app.set('views', './views');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 // Ensure the 'uploads' directory exists
 const fs = require('fs');
 

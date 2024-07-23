@@ -12,7 +12,7 @@ const Product = {
     },
     findSearch:(query,callback)=>{
 
-        db.query('SELECT sach.* FROM sach JOIN theloai ON sach.id_TheLoai = theloai.id WHERE tenSach LIKE ? OR tacGia LIKE ? OR theloai.tenTheLoai LIKE ?', [`%${query}%`, `%${query}%`, `%${query}%`],callback)
+        db.query('SELECT sach.*, theloai.tenTheLoai FROM sach JOIN theloai ON sach.id_TheLoai = theloai.id WHERE MATCH(sach.tenSach, sach.tacGia) AGAINST(? IN NATURAL LANGUAGE MODE)OR LOWER(theloai.tenTheLoai) LIKE LOWER(?)', [`%${query}%`, `%${query}%`],callback)
 
     },
     findFree:(mienPhi,callback)=>{

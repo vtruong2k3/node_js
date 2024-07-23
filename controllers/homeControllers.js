@@ -12,7 +12,11 @@ exports.home = (req, res) => {
             Product.findTheLoai((err,dataTheLoai)=>{
 
                 if(err)throw err
-                res.render('index', { data,dataFree,dataTheLoai, user: req.session.user || null });
+                res.render('index', { 
+                    data,
+                    dataFree,
+                    dataTheLoai, 
+                    user: req.session.user || null });
             })
         })
     });
