@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+:root{
+  --font-pop: "Poppins", sans-serif;
+  --font-inter:"Inter", sans-serif;
+  --font-open:"Open Sans", sans-serif;
+}
+.navbar{
+    height: 80px;
+}
+.navbar-brand {
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 20px;
+    position: relative;
+      transition: color 0.3s, border-bottom 0.3s, padding-bottom 0.3s, margin-bottom 0.3s;
+  }
+  .navbar-nav .nav-link:hover{
+    color: black; /* Đổi màu chữ khi hover */
+   
+    border-bottom: 3px solid black; /* Thêm dòng kẻ dưới dày hơn */
+    padding-bottom: 5px; /* Khoảng cách dưới của chữ */
+    margin-bottom: -3px; 
+  }
+  .navbar-nav .nav-link.active {
+    color: black; /* Màu chữ khi được chọn */
+    border-bottom: 3px solid black; /* Đường kẻ dưới khi được chọn */
+    padding-bottom: 5px; /* Khoảng cách dưới của chữ */
+    margin-bottom: -3px; /* Điều chỉnh khoảng cách lề dưới */
+    
+  }
+  /* Tùy chỉnh menu sổ xuống */
+  .dropdown-menu {
+    background-color: #f8f9fa;
+  }
+
+  /* Thay đổi màu nền và màu chữ của các mục trong menu khi di chuột */
+  .dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  /* Thay đổi màu nền và màu chữ của mục đã được chọn */
+  .dropdown-item:active {
+    background-color: #0056b3;
+    color: #fff;
+  }
+
+  /* Tùy chỉnh form tìm kiếm */
+  .form-control {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  /* Tùy chỉnh nút tìm kiếm */
+  .btn-outline-success {
+    border-radius: 0;
+  }
+  .box-book .book{
+    width: 90%;
+  }
+  .box-book .title-book{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-open);
+   
+
+    
+  }
+
+  .box-book .title-book h1{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .box-book .title-book .line-book{
+    width: 90%;
+    background-color: black;
+    height: 1.5px;
+    margin-left: 0;
+    
+    
+  }
+  .box-book .book .book-content .img-book img{
+    width: 19rem;
+    height: 27rem;
+    border-radius: 10px;
+  }
+  .box-book .book .book-content .img-book img:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  .box-book .book .book-content .book-tit{
+    font-family: var(--font-pop);
+    
+  }
+  .box-book .book .book-content .book-tit h3{
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .author .title-book{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-open);
+   
+
+    
+  }
+
+  .author .title-book h1{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .author .title-book .line-book{
+    width: 90%;
+    background-color: black;
+    height: 1.5px;
+    margin-left: 0;
+    
+    
+  }
+  .author .author-box .img img{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+  }
+  .author .author-box .img img:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  .author .author-box .title{
+    margin-top: 2rem;
+    font-family: var(--font-pop);
+    display: flex;
+  }
+  .author .author-box .title h3{
+    font-weight: 500;
+    font-size: 25px;
+    
+  }
+  .tuyentap .title-book{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-open);
+   
+
+    
+  }
+
+  .tuyentap .title-book h1{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .tuyentap .title-book .line-book{
+    width: 90%;
+    background-color: black;
+    height: 1.5px;
+    margin-left: 0;
+    
+    
+  }
+  .tuyentap .tuyentap-box .img img{
+    border-radius: 15px;
+    width: 25rem;
+    height: 15rem;
+  }
+  .tuyentap .tuyentap-box .img img:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  .tuyentap .tuyentap-box .title{
+    margin-top: 2rem;
+    font-family: var(--font-pop);
+    
+  }
+  .tuyentap .tuyentap-box .title h3{
+    font-weight: 400;
+    font-size: 27px;
+    
+  }
+  footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* login */
+
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+.login-card {
+  display: flex;
+
+  
+  width: 900px;
+  height: 550px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+
+
+
+  
+}
+
+.form-control {
+  border-radius: 20px;
+  width: 20rem;
+  height: 45px;
+  font-size: 1.1em;
+}
+
+.btn-outline-dark {
+ 
+  border-radius: 20px;
+  height: 40px;
+  font-size: 1.1em;
+  transition: all 0.3s;
+  
+}
+
+.close-btn {
+  position: absolute;
+  top: 15%;
+  right: 21.5%;
+  background: rgba(0, 0, 0, 0.103);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+
+/* hien đè lên*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* transparent background */
+  display: none; /* initially hide the overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* make sure it's above other content */
+}
+.register-form{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* transparent background */
+  display: none; /* initially hide the overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+/*chi tiet san pham*/
+
+.comment-lists {
+  overflow: hidden; /* Ẩn thanh cuộn mặc định */
+  max-height: 500px; /* Kích thước tối đa của phần tử, có thể điều chỉnh tùy thuộc vào nhu cầu */
+  transition: max-height 0.3s ease; /* Thêm hiệu ứng chuyển tiếp cho max-height */
+}
+
+/* Khi hover vào phần tử, hiển thị thanh cuộn */
+.comment-lists:hover {
+  overflow-y: auto; /* Hiển thị thanh cuộn dọc khi hover */
+  max-height: 500px; /* Tăng kích thước tối đa để hiển thị nhiều nội dung hơn khi hover */
+}
+
+/* Tùy chỉnh thanh cuộn đẹp hơn */
+.comment-lists::-webkit-scrollbar {
+  width: 5px; /* Đặt độ rộng của thanh cuộn */
+}
+
+.comment-lists::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của thanh cuộn */
+}
+
+.comment-lists::-webkit-scrollbar-thumb {
+  background: #888; /* Màu của thanh cuộn */
+  border-radius: 10px; /* Bo tròn góc của thanh cuộn */
+}
+
+.comment-lists::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu của thanh cuộn khi hover */
+}
+
+.book-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Shadow effect for realism */
+  transform: perspective(1000px) rotateY(0deg); /* Perspective for 3D effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  margin-top: 1rem;
+
+  margin-left: 1rem;
+}
+
+.book-image:hover {
+  transform: perspective(1000px) rotateY(5deg); /* Slight rotation on hover for 3D effect */
+}
+    .book-title {
+      font-family: var(--font-open);
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      margin-top: 1rem;
+
+    }
+    .book-genre, .book-author {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .read-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+    .comment-section {
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 3rem;
+      margin-right: 5rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .comment-section h2 {
+      margin-bottom: 20px;
+      font-size: 1.75rem;
+      color: #333;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+    }
+    
+    
+    
+    .comment {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .comment:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+    .comment .profile-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+      background-color: #ddd;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .comment .comment-content {
+      flex: 1;
+    }
+    
+    .comment .username {
+      font-weight: 600;
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    
+    .comment .comment-text {
+      font-size: 1rem;
+      color: #666;
+    }
+    
+    .comment-form {
+      margin-top: 20px;
+    }
+    
+    .comment-form .form-label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .comment-form .form-control {
+      border-radius: 4px;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
+    
+    .comment-form .btn {
+      margin-top: 10px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .comment-form .btn:hover {
+      background-color: #0056b3;
+    }
+    
+    .comment-list {
+      max-height: 300px;
+      overflow-y: auto;
+      padding-bottom: 15px;
+      position: relative; /* Needed for hiding scrollbar */
+    }
+/* Hide scrollbar by default */
+.comment-list {
+  overflow: hidden; /* Ẩn thanh cuộn mặc định */
+  max-height: 300px; /* Kích thước tối đa của phần tử, có thể điều chỉnh tùy thuộc vào nhu cầu */
+  transition: max-height 0.3s ease; /* Thêm hiệu ứng chuyển tiếp cho max-height */
+}
+
+/* Khi hover vào phần tử, hiển thị thanh cuộn */
+.comment-list:hover {
+  overflow-y: auto; /* Hiển thị thanh cuộn dọc khi hover */
+  max-height: 300px; /* Tăng kích thước tối đa để hiển thị nhiều nội dung hơn khi hover */
+}
+
+/* Tùy chỉnh thanh cuộn đẹp hơn */
+.comment-list::-webkit-scrollbar {
+  width: 5px; /* Đặt độ rộng của thanh cuộn */
+}
+
+.comment-list::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của thanh cuộn */
+}
+
+.comment-list::-webkit-scrollbar-thumb {
+  background: #888; /* Màu của thanh cuộn */
+  border-radius: 10px; /* Bo tròn góc của thanh cuộn */
+}
+
+.comment-list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu của thanh cuộn khi hover */
+}
+
+.book-info .book-genre h5{
+  float: left;margin-right: 10px;
+
+
+
+  margin-top: 2px;
+}
+
+.book-info .book-author h5{
+
+  float: left;margin-right: 10px;
+
+
+
+  margin-top: 2px;
+
+  
+}
+
